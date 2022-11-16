@@ -1,5 +1,5 @@
 # The app itself
 -e .
 
-mock
-psycopg2-binary
+mock==4.0.3
+psycopg2-binary==2.9.5
