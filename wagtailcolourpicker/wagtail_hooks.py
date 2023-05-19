@@ -3,7 +3,7 @@ from django.utils.html import format_html
 from django.utils.translation import gettext as _
 
 from wagtail.admin.rich_text.editors.draftail import features as draftail_features
-from wagtail.core import hooks
+from wagtail import hooks
 
 from wagtailcolourpicker.conf import get_setting
 from wagtailcolourpicker.utils.colour import register_all_colour_features
@@ -38,7 +38,8 @@ def register_textcolour_feature(features):
     control = {
         'type': type_,
         'icon': get_setting('ICON'),
-        'description': _('Text Colour'),
+        'label': "Text Colour",
+        'description': "Text Colour",
     }
 
     features.register_editor_plugin(

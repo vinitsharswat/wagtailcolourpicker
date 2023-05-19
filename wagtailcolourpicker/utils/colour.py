@@ -5,7 +5,8 @@ from wagtailcolourpicker.conf import get_setting
 
 
 def get_colour_choices():
-    return tuple(get_setting('COLOURS').items())
+    # return tuple(get_setting('COLOURS').items())
+    return [ (y,x) for x,y in get_setting('COLOURS').items() ] 
 
 
 def get_feature_name(name):
