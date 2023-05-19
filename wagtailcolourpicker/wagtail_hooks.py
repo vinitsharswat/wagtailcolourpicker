@@ -38,7 +38,7 @@ def register_textcolour_feature(features):
     control = {
         'type': type_,
         'icon': get_setting('ICON'),
-        'label': "Text Colour",
+        # 'label': "Text Colour",
         'description': "Text Colour",
     }
 
